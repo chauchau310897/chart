@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+	<title> Example </title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">  
+	<script type="text/javascript" src="vendor/bootstrap.js"></script>
+	<script type="text/javascript" src="vendor/jquery-2.1.1.min.js"></script>
+	<script type="text/javascript" src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+ 	<script type="text/javascript" src="1.js"></script>
+	<link rel="stylesheet" href="vendor/bootstrap.css">
+	<link rel="stylesheet" href="vendor/font-awesome.css">
+	 <link rel="stylesheet" href="1.css">
+	 
+	 <style>
+		table {
+			font-family: arial, sans-serif;
+			border-collapse: collapse;
+			width: 100%;
+		}
+		
+		td, th {
+			border: 1px solid #dddddd;
+			text-align: left;
+			padding: 8px;
+		}
+		
+		tr:nth-child(even) {
+			background-color: #dddddd;
+		}
+		</style>
+
+</head>
+<body >
+	<canvas id="bar-chart" width="800" height="450"></canvas>
+	<br>
+	<div class="contaner">
+		<div class="row">
+			<div class="col-sm-12">
+				<table>
+					<tr>
+					  <th>Nation</th>
+					  <th>Population</th>
+					  <th>Delete</th>
+					</tr>
+					<tr>
+					  <td>Africa</td>
+					  <td>2478</td>
+					  <td><button onclick="myFunction()">Delete</button></td>
+					</tr>
+					<tr>
+					  <td>Asia</td>
+					  <td>5267</td>
+					  <td><button onclick="myFunction()">Delete</button></td>
+					</tr>
+					
+				  </table>
+				  
+			</div>
+
+		</div>
+		<div class="col-sm-12">
+			Nation:
+			<input id="xValue" type="text" step="any" placeholder="Enter Nation"> 
+			Population:
+			<input id="yValue" type="number" step="any" placeholder="Enter Polation">
+			<button id="renderButton">Add data</button>
+			
+			</div>
+		</div>
+	</div>
+</body>
+</html>
